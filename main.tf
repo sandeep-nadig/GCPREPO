@@ -1,3 +1,3 @@
 resource "google_compute_network" "vpc_network" {
-  name = "terraform-network-1"
+  name = "terraform-test"
 }
