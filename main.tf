@@ -9,3 +9,8 @@ resource "google_project_iam_member" "sa_viewer" {
   role    = "roles/viewer"
   member  = "serviceAccount:${google_service_account.test_sa.email}"
 }
+
+resource "google_service_account" "test_sa2" {
+  account_id   = "test-sa-terraform"
+  display_name = "Terraform Service Account2"
+}
